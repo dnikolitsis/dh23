@@ -1,0 +1,91 @@
+
+
+/* p{
+    color: white;
+    background-color: black;
+} */
+
+/* .dh-text{
+    color: white;
+    background-color: black;
+}
+
+#dhText {
+    color: white;
+    background-color: brown;
+} */
+/* p{
+    font-size: 1.5 rem;
+}
+
+.bg-dark{
+    background-color: black;
+}
+
+.bg-light{
+    background-color: aquamarine;
+}
+.fg-light{
+    color: white;
+}
+
+.fg-dark{
+    color:darkblue
+}
+ul>li{
+    color: palevioletred;
+}
+
+.menu>li{
+    font-size: 25px;
+} */
+
+/* h1 ~ p {
+    background-color: green;
+}
+
+a :link{
+    color:black;
+    text-decoration: none;
+}
+a:visited {
+    color:red;
+    
+}
+
+a:focus{
+     outline:none;
+     background-color: yellow;
+}
+
+a:hover {
+    background-color: red;
+    color:white;
+}
+a:hover{
+    color:gray;
+    background-color: white;
+}
+
+
+
+
+
+.dh-text{
+    color:red;
+}
+
+p{
+    color:blue;
+}
+
+p{
+    color:black;
+} */
+
+h1{
+    font-family: "Roboto";
+    /* color:red;
+    background-color: black; */
+    font-weight: 400;
+}

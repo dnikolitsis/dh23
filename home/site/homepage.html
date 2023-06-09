@@ -1,0 +1,1281 @@
+
+<!DOCTYPE html>
+
+<!-- This code was generated using AnimaApp.com. 
+This code is a high-fidelity prototype.
+Get developer-friendly React or HTML/CSS code for this project at: https://projects.animaapp.com?utm_source=hosted-code 
+03/06/2023 10:23:35 -->
+
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,600,300,800,500,400");
+
+
+@font-face {
+  font-family: "Arial-Narrow";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/6093e95fd382f7b9afef0226/fonts/opensans-regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Arial-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/63ef0d4311ab2525e10bd15a/fonts/arial-regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Arial-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://anima-uploads.s3.amazonaws.com/projects/622cf300b3519bff6181cd8f/fonts/fontsfree-net-arial-bold.ttf') format("truetype");
+}
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/647b1294fec40215f13b5d68.647b1296cf61cd9b296518b9.6wwWqLO.hch.png");
+
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --astronaut: #243e6d;
+  --biloba-flower: #b78efa;
+  --black: #000000;
+  --danube: #7093dd;
+  --danube-2: #7093dd8a;
+  --gallery: #eeeeee;
+  --mine-shaft: #333333;
+  --steel-blue: #428bca;
+  --tangaroa: #08193e;
+  --white: #ffffff;
+  --white-2: #ffffff99;
+ 
+  --font-size-l: 13px;
+  --font-size-m: 11px;
+  --font-size-xl: 14px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 18px;
+  --font-size-xxxxl: 20px;
+  --font-size-xxxxxl: 24px;
+ 
+  --font-family-arial-bold: "Arial-Bold", Helvetica;
+  --font-family-arial-narrow: "Arial-Narrow", Helvetica;
+  --font-family-arial-regular: "Arial-Regular", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.roboto-normal-black-13px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-semi-bold-black-11px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-light-black-13px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.roboto-semi-bold-black-20px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-semi-bold-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-normal-black-11px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-light-black-12px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.roboto-semi-bold-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-semi-bold-white-18px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-bold-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-semi-bold-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-light-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 300;
+}
+
+.roboto-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-semi-bold-black-12px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-medium-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.arial-regular-normal-mine-shaft-14px {
+  color: var(--mine-shaft);
+  font-family: var(--font-family-arial-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-medium-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.roboto-semi-bold-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-medium-tangaroa-24px {
+  color: var(--tangaroa);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.roboto-semi-bold-white-22px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.arial-bold-mine-shaft-14px {
+  color: var(--mine-shaft);
+  font-family: var(--font-family-arial-bold);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-black-17px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-bold-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.roboto-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-semi-bold-black-15px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.roboto-semi-bold-white-26px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+
+
+._ {
+  background-color: transparent;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+.image {
+  background-color: transparent;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+.past-polls {
+  background-color: var(--astronaut);
+  border-radius: 20px;
+  height: 79px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 353px;
+}
+
+.component-2 {
+  background-color: transparent;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+.component-4 {
+  background-color: var(--white);
+  height: 41px;
+  left: 106px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 491px;
+}
+
+.poll_-arrow {
+  background-color: transparent;
+  height: 23px;
+  left: 478px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 9px;
+  width: 13px;
+}
+
+.rectangle-1 {
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--black);
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  height: 41px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 491px;
+}
+/* screen - homepage */
+
+.homepage {
+  background-color: var(--white);
+  border: 1px none;
+  height: 1751px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1000px;
+}
+
+.homepage .footer-zYNucu {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/footer.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 169px;
+  left: 0px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 1582px;
+  width: 1000px;
+}
+
+.homepage .site-created-and-hosted-by-pyxis-bUVegb {
+  background-color: transparent;
+  height: auto;
+  left: 408px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 140px;
+  white-space: nowrap;
+  width: auto;
+}
+
+
+
+.homepage .span1-Cu8VY9 {
+  text-decoration: underline;
+}
+
+.homepage .insta-bUVegb {
+  background-color: transparent;
+  height: 28px;
+  left: 547px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 24px;
+  width: 28px;
+}
+
+.homepage .facebook-bUVegb {
+  background-color: transparent;
+  height: 28px;
+  left: 485px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 24px;
+  width: 30px;
+}
+
+.homepage .twitter-bUVegb {
+  background-color: transparent;
+  height: 28px;
+  left: 425px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 24px;
+  width: 28px;
+}
+
+.homepage .x63-10552-bUVegb {
+  background-color: transparent;
+  height: auto;
+  left: 8px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 125px;
+  width: auto;
+}
+
+
+
+.homepage .span1-LLfUmA {
+  text-decoration: underline;
+}
+
+.homepage .x22-10438-bUVegb {
+  background-color: transparent;
+  height: auto;
+  left: 8px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 84px;
+  width: auto;
+}
+
+
+
+.homepage .span1-YxmINo {
+  text-decoration: underline;
+}
+
+.homepage .text_label-bUVegb {
+  height: auto;
+  left: 791px;
+  text-align: left;
+  top: 137px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .text_label-zBe6QQ {
+  height: auto;
+  left: 922px;
+  text-align: left;
+  top: 122px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .text_label-xAElKM {
+  height: auto;
+  left: 460px;
+  text-align: left;
+  top: 106px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .component-2-zYNucu {
+  background-color: transparent;
+  height: 361px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 0px;
+  width: 1000px;
+}
+
+.homepage .header-k8xYKT {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/header.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 309px;
+  left: 0px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  width: 1000px;
+}
+
+.homepage .logo-zSh7hb {
+  background-color: transparent;
+  height: 96px;
+  left: 130px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  width: 94px;
+}
+
+.homepage .welcome_bar-zSh7hb {
+  background-color: transparent;
+  height: 43px;
+  left: 274px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 37px;
+  width: 726px;
+}
+
+.homepage .x-zSh7hb {
+  height: auto;
+  left: 330px;
+  top: 46px;
+  white-space: nowrap;
+}
+
+.homepage ._-zSh7hb {
+  height: 25px;
+  left: 861px;
+  top: 45px;
+  width: 19px;
+}
+
+.homepage .x1595-zSh7hb {
+  background-color: transparent;
+  height: auto;
+  left: 885px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 46px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .en-zSh7hb {
+  background-color: transparent;
+  height: auto;
+  left: 944px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 48px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .frame-2-zSh7hb {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/frame-2@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 20px;
+  left: 38px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  width: 79px;
+}
+
+.homepage .menu-k8xYKT {
+  background-color: var(--white);
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px #00000059;
+  height: 103px;
+  left: 92px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 258px;
+  width: 820px;
+}
+
+.homepage ._-iy2JWx {
+  height: 24px;
+  left: 183px;
+  top: 34px;
+  width: 26px;
+}
+
+.homepage ._-gN6bUu {
+  height: 21px;
+  left: 300px;
+  top: 35px;
+  width: 31px;
+}
+
+.homepage ._-QbJFMF {
+  height: 24px;
+  left: 73px;
+  top: 34px;
+  width: 23px;
+}
+
+.homepage .image-iy2JWx {
+  height: 24px;
+  left: 646px;
+  top: 36px;
+  width: 20px;
+}
+
+.homepage .image-gN6bUu {
+  height: 25px;
+  left: 408px;
+  top: 35px;
+  width: 29px;
+}
+
+.homepage .image-QbJFMF {
+  height: 26px;
+  left: 529px;
+  top: 34px;
+  width: 20px;
+}
+
+.homepage .image-tz95Zv {
+  height: 21px;
+  left: 741px;
+  top: 39px;
+  width: 26px;
+}
+
+.homepage .text_label-iy2JWx {
+  height: auto;
+  left: 37px;
+  text-align: center;
+  top: 63px;
+  width: 96px;
+}
+
+.homepage .text_label-gN6bUu {
+  height: auto;
+  left: 266px;
+  text-align: center;
+  top: 63px;
+  width: 98px;
+}
+
+.homepage .text_label-QbJFMF {
+  height: auto;
+  left: 383px;
+  text-align: center;
+  top: 70px;
+  white-space: nowrap;
+  width: 80px;
+}
+
+.homepage .text_label-tz95Zv {
+  height: auto;
+  left: 152px;
+  text-align: left;
+  top: 70px;
+  white-space: nowrap;
+  width: 95px;
+}
+
+.homepage .text_label-6tgLT3 {
+  height: auto;
+  left: 482px;
+  text-align: center;
+  top: 70px;
+  white-space: nowrap;
+  width: 114px;
+}
+
+.homepage .text_label-Ojr9M3 {
+  height: auto;
+  left: 615px;
+  text-align: center;
+  top: 70px;
+  white-space: nowrap;
+  width: 83px;
+}
+
+.homepage .text_label-JJFBd6 {
+  height: auto;
+  left: 717px;
+  text-align: center;
+  top: 70px;
+  white-space: nowrap;
+  width: 73px;
+}
+
+.homepage .search_bar-k8xYKT {
+  background-color: transparent;
+  height: 51px;
+  left: 260px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 219px;
+  width: 511px;
+}
+
+.homepage .main-zYNucu {
+  background-color: transparent;
+  height: 989px;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  top: 387px;
+  width: 1000px;
+}
+
+.homepage .news1-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 57px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 307px;
+  width: 243px;
+}
+
+.homepage .news2-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 365px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 307px;
+  width: 243px;
+}
+
+.homepage .news3-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 680px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 307px;
+  width: 243px;
+}
+
+.homepage .events1-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 57px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 669px;
+  width: 243px;
+}
+
+.homepage .events2-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 365px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 669px;
+  width: 243px;
+}
+
+.homepage .events3-MT0hXV {
+  background-color: transparent;
+  height: 190px;
+  left: 680px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 669px;
+  width: 243px;
+}
+
+.homepage .component-1-MT0hXV {
+  left: 51px;
+  top: 234px;
+}
+
+.homepage .text_label-MT0hXV {
+  height: auto;
+  left: 81px;
+  text-align: left;
+  top: 241px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .component-1-d9Fxd4 {
+  left: 53px;
+  top: 596px;
+}
+
+.homepage .text_label-d9Fxd4 {
+  height: auto;
+  left: 81px;
+  text-align: left;
+  top: 603px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .poll-MT0hXV {
+  background-color: #243e6df5;
+  border-radius: 20px;
+  height: 113px;
+  left: 57px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 42px;
+  width: 527px;
+}
+
+.homepage .component-1-fLthUG {
+  left: 77px;
+  top: 17px;
+}
+
+.homepage .text_label-fLthUG {
+  height: auto;
+  left: 102px;
+  text-align: left;
+  top: 24px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .text_label-Q7m6Ny {
+  height: auto;
+  left: 88px;
+  text-align: left;
+  top: 74px;
+  white-space: nowrap;
+  width: 581px;
+}
+
+.homepage .pop-up-ice-cream-market-28-2023-MT0hXV {
+  background-color: transparent;
+  height: auto;
+  left: 372px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 865px;
+  width: 229px;
+}
+
+
+.homepage .deep-breath-in-the-park-26-2023-MT0hXV {
+  background-color: transparent;
+  height: auto;
+  left: 680px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 865px;
+  width: 229px;
+}
+
+
+.homepage .melvins-3-2023-MT0hXV {
+  background-color: transparent;
+  height: auto;
+  left: 64px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 865px;
+  width: auto;
+}
+
+
+
+.homepage .x29-camps-MT0hXV {
+  background-color: transparent;
+  height: auto;
+  left: 64px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 506px;
+  width: auto;
+}
+
+.homepage .text_label-WWWNNx {
+  height: auto;
+  left: 372px;
+  text-align: left;
+  top: 502px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .x-MT0hXV {
+  height: auto;
+  left: 685px;
+  top: 506px;
+}
+
+.homepage .x-d9Fxd4 {
+  color: var(--biloba-flower);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 435px;
+  top: 121px;
+  white-space: nowrap;
+}
+
+.homepage .newsletter-zYNucu {
+  background-color: #c6d3e975;
+  height: 206px;
+  left: 0px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  position: absolute;
+  top: 1376px;
+  width: 1000px;
+}
+
+.homepage .email_-type-I6xdCN {
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 56px;
+  left: 356px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 36px;
+  width: 264px;
+}
+
+.homepage .mobile_-type-I6xdCN {
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 56px;
+  left: 356px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 131px;
+  width: 264px;
+}
+
+.homepage .newsletter_-button-I6xdCN {
+  background-color: var(--tangaroa);
+  border-radius: 20px;
+  height: 56px;
+  left: 697px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 70px;
+  width: 195px;
+}
+
+.homepage .e-mail-I6xdCN {
+  background-color: transparent;
+  height: 19px;
+  left: 370px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 54px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .x-I6xdCN {
+  height: 19px;
+  left: 371px;
+  top: 148px;
+  white-space: nowrap;
+}
+
+.homepage .text_label-I6xdCN {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+  height: 21px;
+  left: 722px;
+  text-align: left;
+  top: 87px;
+  white-space: nowrap;
+  width: 162px;
+}
+
+.homepage .mail-I6xdCN {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+  height: 21px;
+  left: 385px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 11px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.homepage .x-PcxqVb {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 800;
+  height: 21px;
+  left: 404px;
+  top: 109px;
+  white-space: nowrap;
+}
+
+.homepage .text_label-PcxqVb {
+  height: 82px;
+  left: 58px;
+  text-align: center;
+  top: 56px;
+  width: 261px;
+}
+
+
+.homepage .span1-tiNhbs {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+.homepage .component-1 {
+  background-color: transparent;
+  height: 49px;
+  mix-blend-mode: normal;
+  position: absolute;
+  width: 318px;
+}
+
+.homepage .text_label {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+.homepage .x {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  width: auto;
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="homepage"><div class="container-center-horizontal"><div class="homepage screen " data-id="2:2"><footer class="footer-zYNucu" data-id="12:28-e9ec1920-5b0f-44be-8b5d-920078a1a475"><p class="site-created-and-hosted-by-pyxis-bUVegb roboto-light-black-13px" data-id="3:41"><span class="span0-Cu8VY9 roboto-light-black-13px">Site created and hosted by </span><span class="span1-Cu8VY9 roboto-light-black-13px">Pyxis</span></p><img class="insta-bUVegb" data-id="3:51" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/insta.svg" alt="Insta"><img class="facebook-bUVegb" data-id="3:53" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/facebook.svg" alt="Facebook"><img class="twitter-bUVegb" data-id="3:56" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/twitter.svg" alt="Twitter"><p class="x63-10552-bUVegb roboto-semi-bold-black-11px" data-id="3:60"><span class="span0-LLfUmA roboto-semi-bold-black-11px">ΔΗΜΑΡΧΙΑΚΟ ΜΕΓΑΡΟ<br></span><a href="https://www.google.com/maps/place/Pl.+Kotzia,+Athina+105+51/@37.9817258,23.7276994,19.25z/data=!4m5!3m4!1s0x14a1bd3ace30060f:0x8897f82d8ef6a27b!8m2!3d37.9816306!4d23.7281396" target="_blank"><span class="span1-LLfUmA roboto-normal-black-11px">Αθηνάς 63, Πλατεία Εθνικής Αντίστασης (Κοτζιά), Τ.Κ. 10552</span></a></p><div class="x22-10438-bUVegb roboto-semi-bold-black-11px" data-id="3:61"><span class="span0-YxmINo roboto-semi-bold-black-11px">ΔΗΜΑΡΧΕΙΟ<br></span><a href="https://www.google.com/maps/place/Liosion+22,+Athina+104+38/@37.9884516,23.7249113,18.5z/data=!4m5!3m4!1s0x14a1bd2e6e5909af:0xd8eb9f695eeeabba!8m2!3d37.9884392!4d23.725595" target="_blank"><span class="span1-YxmINo roboto-normal-black-11px">Λιοσίων 22, Τ.Κ. 10438</span></a></div><div class="text_label-bUVegb text_label roboto-light-black-12px" data-id="3:62">Προστασία Προσωπικών Δεδομένων</div><div class="text_label-zBe6QQ text_label roboto-light-black-12px" data-id="3:63">Όροι χρήσης</div><div class="text_label-xAElKM text_label roboto-bold-black-14px" data-id="3:64">Επικοινωνία</div></footer><div class="component-2-zYNucu" data-id="12:77"><header class="header-k8xYKT" data-id="125:379-54280f99-be69-418b-b91d-d7e26d2dc52f"><img class="logo-zSh7hb" data-id="125:380" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/------logo@2x.png" alt="logo"><img class="welcome_bar-zSh7hb" data-id="125:381" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/welcome-bar.svg" alt="welcome_bar"><p class="x-zSh7hb x roboto-semi-bold-black-20px" data-id="125:382">Δήμος Αθηναίων // Καλώς ήρθες</p><img class="_-zSh7hb _" data-id="125:383" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/---------.svg" alt="_"><div class="x1595-zSh7hb roboto-semi-bold-black-20px" data-id="125:384">1595</div><div class="en-zSh7hb roboto-semi-bold-black-16px" data-id="125:385">ελ/en</div><div class="frame-2-zSh7hb" data-id="129:575-36d5a2bb-3f85-464b-821e-bbbb8ee9a1b3"></div></header><div class="menu-k8xYKT" data-id="12:75"><img class="_-iy2JWx _" data-id="I12:75;3:15" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/------------.svg" alt="_"><img class="_-gN6bUu _" data-id="I12:75;3:13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/----------.svg" alt="_"><img class="_-QbJFMF _" data-id="I12:75;3:21" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/-------.svg" alt="_"><img class="image-iy2JWx image" data-id="I12:75;3:23" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/-----------1.svg" alt="image"><img class="image-gN6bUu image" data-id="I12:75;3:27" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/----------1.svg" alt="image"><img class="image-QbJFMF image" data-id="I12:75;3:29" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/--------------.svg" alt="image"><img class="image-tz95Zv image" data-id="I12:75;3:31" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/---.svg" alt="image"><div class="text_label-iy2JWx text_label roboto-normal-black-13px" data-id="I12:75;3:32">Ηλεκτρονικές<br>Υπηρεσίες</div><div class="text_label-gN6bUu text_label roboto-normal-black-13px" data-id="I12:75;3:34">Αναφορά<br>Προβλημάτων</div><div class="text_label-QbJFMF text_label roboto-normal-black-13px" data-id="I12:75;3:35">Συμμετέχω</div><div class="text_label-tz95Zv text_label roboto-normal-black-13px" data-id="I12:75;3:33">Πολιτική Ζωή</div><div class="text_label-6tgLT3 text_label roboto-normal-black-13px" data-id="I12:75;3:36">Δραστηριότητες</div><div class="text_label-Ojr9M3 text_label roboto-normal-black-13px" data-id="I12:75;3:37">Εκδηλώσεις</div><div class="text_label-JJFBd6 text_label roboto-normal-black-13px" data-id="I12:75;3:38">Νέα Δήμου</div></div><img class="search_bar-k8xYKT" data-id="12:76" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/search-bar.svg" alt="Search_bar"></div><div class="main-zYNucu" data-id="10:2"><img class="news1-MT0hXV" data-id="10:3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/news1@2x.png" alt="News1"><img class="news2-MT0hXV" data-id="10:4" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/news2@2x.png" alt="News2"><img class="news3-MT0hXV" data-id="10:5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/news3@2x.png" alt="News3"><img class="events1-MT0hXV" data-id="12:38" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/events1@2x.png" alt="Events1"><img class="events2-MT0hXV" data-id="12:39" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/events2@2x.png" alt="Events2"><img class="events3-MT0hXV" data-id="12:40" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/events3@2x.png" alt="Events3"><img class="component-1-MT0hXV component-1" data-id="12:42" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/component-1.svg" alt="Component 1"><div class="text_label-MT0hXV text_label roboto-semi-bold-white-22px" data-id="10:7">Τα νέα του Δήμου</div><img class="component-1-d9Fxd4 component-1" data-id="12:45" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/component-1-1.svg" alt="Component 1"><div class="text_label-d9Fxd4 text_label roboto-semi-bold-white-22px" data-id="12:36">Εκδηλώσεις</div><div class="poll-MT0hXV" data-id="11:19"></div><img class="component-1-fLthUG component-1" data-id="12:41" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/647b1298085f746213cc2113/releases/647b14a3cf61cd9b296518c8/img/component-1-2.svg" alt="Component 1"><div class="text_label-fLthUG text_label roboto-semi-bold-white-22px" data-id="12:22">Ενεργή Δημοσκόπηση</div><div class="text_label-Q7m6Ny text_label roboto-semi-bold-white-20px" data-id="12:29">Χαρακτηρισμός οδού Μαυρομιχάλη</div><p class="pop-up-ice-cream-market-28-2023-MT0hXV roboto-semi-bold-black-12px" data-id="110:379"><span class="span0-BpOHou roboto-semi-bold-black-12px">Δημοτική Αγορά Κυψέλης<br></span><span class="span1-BpOHou roboto-semi-bold-black-16px">Pop Up Ice Cream Market <br></span><span class="span2-BpOHou roboto-medium-black-16px">28 Μαΐου 2023</span></p><p class="deep-breath-in-the-park-26-2023-MT0hXV roboto-semi-bold-black-12px" data-id="110:381"><span class="span0-xxy8Hd roboto-semi-bold-black-12px">Πάρκο Ελευθερίας, Αθήνα<br></span><span class="span1-xxy8Hd roboto-semi-bold-black-16px">Deep Breath in the Park <br></span><span class="span2-xxy8Hd roboto-medium-black-16px">26 Μαΐου 2023</span></p><p class="melvins-3-2023-MT0hXV roboto-semi-bold-black-12px" data-id="110:380"><span class="span0-aN5sJR roboto-semi-bold-black-12px">Τεχνόπολη Δήμου Αθηναίων<br></span><span class="span1-aN5sJR roboto-semi-bold-black-16px">MELVINS Συναυλία <br></span><span class="span2-aN5sJR roboto-medium-black-16px">3 Ιουλίου 2023</span></p><p class="x29-camps-MT0hXV roboto-medium-black-16px" data-id="110:382">«Ανοίγουν» στις 29 Μαΐου για <br>μαθητές δημοτικού οι εγγραφές <br>στα καλοκαιρινά camps</p><div class="text_label-WWWNNx text_label roboto-medium-black-16px" data-id="110:383">Μουσική Τεχνόπολη</div><p class="x-MT0hXV x roboto-medium-black-16px" data-id="110:385">Δήμος Αθηναίων:<br>Επιστρέφονται πινακίδες Ι.Χ. <br>και δικύκλων</p><div class="x-d9Fxd4 x" data-id="180:448">Ψήφισε τώρα!</div></div><div class="newsletter-zYNucu" data-id="10:12"><div class="email_-type-I6xdCN" data-id="10:14"></div><div class="mobile_-type-I6xdCN" data-id="17:519"></div><div class="newsletter_-button-I6xdCN" data-id="10:15"></div><div class="e-mail-I6xdCN valign-text-middle roboto-light-black-16px" data-id="10:16">E-mail..</div><div class="x-I6xdCN valign-text-middle roboto-light-black-16px" data-id="17:520">Κινητό..</div><div class="text_label-I6xdCN valign-text-middle text_label" data-id="10:17">ΕΙΜΑΙ ΕΝΗΜΕΡΟΣ</div><div class="mail-I6xdCN valign-text-middle" data-id="17:521">Συμπλήρωσε το mail σου</div><p class="x-PcxqVb valign-text-middle" data-id="17:523">Ή και το κινητό σου!</p><p class="text_label-PcxqVb valign-text-middle text_label roboto-bold-black-18px" data-id="11:18"><span><span class="span0-tiNhbs roboto-bold-black-18px">ΚΑΝΕ ΕΓΓΡΑΦΗ</span><span class="span1-tiNhbs"><br>ΓΙΑ ΝΑ ΓΝΩΡΙΖΕΙΣ ΠΑΝΤΑ ΤΙ ΣΥΜΒΑΙΝΕΙ ΣΤΟΝ</span><span class="span2-tiNhbs roboto-bold-black-18px"><br>ΔΗΜΟ ΣΟΥ</span></span></p></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>
